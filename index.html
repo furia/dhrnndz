@@ -95,9 +95,23 @@ layout: default
 
 <div class="main-color-background">
   <div class="container">
-    <div class="row main-color-block">
+    <div class="row main-color-block-bis">
       <div class="col-lg-10 col-lg-offset-1">
         <h2>Premios</h2>
+        <div class="row">
+          <ul>
+            {% for awards in site.data.awards %}
+            <li>
+              <div class="col-lg-2">
+                <h3>{{ awards.name }}</h3>
+              </div>
+              <div class="col-lg-10 extra-margin">
+                <p>{{ awards.description }}</p>
+              </div>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
       </div>
     </div>
   </div>

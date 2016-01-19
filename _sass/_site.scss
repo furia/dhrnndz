@@ -184,8 +184,81 @@ p {
   }
 }
 
+.main-color-block-bis {
+  margin: 5.313em 0 0 0;
+
+  h2 {
+    border-bottom: solid 1px $light-grey;
+    color: $text-color;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.250em;
+    font-weight: 300;
+    margin-bottom: 0.938em;
+    padding-bottom: 1.250em;
+    text-align: center;
+  }
+
+  h3 {
+    color: $text-color;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.250em;
+    font-weight: 300;
+    padding-bottom: 1.250em;
+    text-align: center;
+  }
+
+  p {
+    color: $text-color;
+  }
+
+  li {
+    list-style: none;
+    padding-right: 1em;
+  }
+}
+
 .black-background {
   background-color: $almost-black;
+}
+.footer-block {
+  margin: 5.313em 0;
+  .footer-list {
+    margin-left: 0;
+
+    li {
+      color: $almost-white;
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.313em;
+      list-style: none;
+      margin-bottom: 0.938em;
+
+      a {
+        color: $almost-white;
+        text-decoration: underline;
+      }
+    }
+
+    p {
+      color: $almost-white;
+      font-size: 1em;
+      margin-left: 0.938em;
+    }
+  }
+
+  .footer-icons {
+    display: inline;
+    float: left;
+
+    li {
+      float: left;
+      list-style: none;
+      padding-right: 1em;
+    }
+
+    img {
+      width: 1.875em;
+    }
+  }
 }
 
 .extra-margin {
