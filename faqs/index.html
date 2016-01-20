@@ -1,0 +1,29 @@
+---
+layout: default
+title: Preguntas frecuentes | Disculpe Doctor
+description: Preguntas frecuentes sobre el servicio y funcionamiento de Disculpe Doctor.
+id: faq
+---
+
+  <div class="container">
+    <div class="row white-block">
+      <div class="col-lg-10 col-lg-offset-1">
+        {% for faq_hash in site.data.faqs %}
+        {% assign faq = faq_hash[1] %}
+        <h2>{{ faq.name }}</h2>
+        <div class="row">
+          <ol>
+            {% for q in faq.questions %}
+            <li>
+              <div class="col-lg-12 extra-margin">
+                <h3>{{ q.question }}</h3>
+                <p>{{ q.answer }}</p>
+              </div>
+            </li>
+            {% endfor %}
+          </ol>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>

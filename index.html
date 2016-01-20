@@ -1,6 +1,18 @@
 ---
 layout: default
 ---
+
+<!-- Imagen superior -->
+<header class="image-bg-fluid-height">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-lg-10 col-lg-offset-1">
+        <h1>{{ site.title }}</h1>
+      </div>
+    </div>
+</header>
+
+<!-- Objetivo del hackaton -->
 <div class="container">
   <div class="row white-block">
     <div class="col-lg-10 col-lg-offset-1">
@@ -12,22 +24,25 @@ layout: default
   </div>
 </div>
 
+<!-- Agenda -->
 <div class="grey-background">
   <div class="container">
     <div class="row grey-block">
       <div class="col-lg-10 col-lg-offset-1">
-        <h2>Agenda</h2>
+        {% for agenda_hash in site.data.agenda %}
+        {% assign agenda = agenda_hash[1] %}
+        <h2>{{ agenda.name }}</h2>
         <div class="row">
           <ul>
-            {% for agenda in site.data.agenda %}
+            {% for a in agenda.agenda %}
             <li>
               <div class="col-lg-6 extra-margin">
                 <div class="row">
                   <div class="col-lg-4">
-                    <h3>{{ agenda.name }}</h3>
+                    <h3>{{ a.name }}</h3>
                   </div>
                   <div class="col-lg-8">
-                    <p>{{ agenda.description }}</p>
+                    <p>{{ a.description }}</p>
                   </div>
                 </div>
               </div>
@@ -35,11 +50,13 @@ layout: default
             {% endfor %}
           </ul>
         </div>
+        {% endfor %}
       </div>
     </div>
   </div>
 </div>
 
+<!-- Mapa -->
 <div class="main-color-background">
   <div class="container">
     <div class="row main-color-block">
@@ -53,22 +70,25 @@ layout: default
   </div>
 </div>
 
+<!-- Jueces -->
 <div class="container">
   <div class="row white-block-bis">
     <div class="col-lg-10 col-lg-offset-1">
-      <h2>Jueces</h2>
+      {% for judge_hash in site.data.judges %}
+      {% assign judge = judge_hash[1] %}
+      <h2>{{ judge.name }}</h2>
       <div class="row">
         <ul>
-          {% for judge in site.data.judges %}
+          {% for j in judge.judges %}
           <li>
             <div class="col-lg-6 extra-margin">
               <div class="row">
                 <div class="col-lg-4">
-                  <img class="img-circle extra-padding" src="{{ judge.image }}" />
+                  <img class="img-circle extra-padding" src="{{ j.image }}" />
                 </div>
                 <div class="col-lg-8">
-                  <h4>{{ judge.name }}</h4>
-                  <p>{{ judge.description }}</p>
+                  <h4>{{ j.judge-name }}</h4>
+                  <p>{{ j.description }}</p>
                 </div>
               </div>
             </div>
@@ -76,9 +96,40 @@ layout: default
           {% endfor %}
         </ul>
       </div>
+      {% endfor %}
     </div>
   </div>
 </div>
+
+<!-- Premios -->
+<div class="main-color-background">
+  <div class="container">
+    <div class="row main-color-block-bis">
+      <div class="col-lg-10 col-lg-offset-1">
+        {% for award_hash in site.data.awards %}
+        {% assign award = award_hash[1] %}
+        <h2>{{ award.name }}</h2>
+        <div class="row">
+          <ul>
+            {% for a in award.awards %}
+            <li>
+              <div class="col-lg-2">
+                <h3>{{ a.name }}</h3>
+              </div>
+              <div class="col-lg-10 extra-margin">
+                <p>{{ a.description }}</p>
+              </div>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- En la etapa posterior, las secciones de Resultados y Ganadores, reemplazan a la sección de premios
 
 <div class="grey-background">
   <div class="container">
@@ -93,31 +144,6 @@ layout: default
   </div>
 </div>
 
-<div class="main-color-background">
-  <div class="container">
-    <div class="row main-color-block-bis">
-      <div class="col-lg-10 col-lg-offset-1">
-        <h2>Premios</h2>
-        <div class="row">
-          <ul>
-            {% for awards in site.data.awards %}
-            <li>
-              <div class="col-lg-2">
-                <h3>{{ awards.name }}</h3>
-              </div>
-              <div class="col-lg-10 extra-margin">
-                <p>{{ awards.description }}</p>
-              </div>
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Esta sección debe ser reemplazada en la etapa Posterior
 <div class="main-color-background">
   <div class="container">
     <div class="row main-color-block">
