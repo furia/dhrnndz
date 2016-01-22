@@ -217,6 +217,39 @@ p {
   }
 }
 
+.award {
+  margin: 0!important;
+  padding: 0!important;
+
+  figure {
+    display: block;
+    margin: 0;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  figcaption {
+    background: rgba(255,255,255,0.8);
+    bottom: 0;
+    padding: 3rem;
+    position: absolute;
+    width: 100%;
+
+    h4 {
+      color: $almost-black;
+      font-family: 'Oswald', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    p {
+      color: $almost-black;
+    }
+  }
+}
+
 .black-background {
   background-color: $almost-black;
 }
@@ -268,6 +301,11 @@ p {
 .extra-margin {
   margin-bottom: 3.750em;
 }
+
+.extra-margin-header {
+  margin-top: 9.250em;
+}
+
 .extra-padding {
   padding-bottom: 15px;
 }

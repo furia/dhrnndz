@@ -101,7 +101,7 @@ layout: default
   </div>
 </div>
 
-<!-- Premios -->
+<!-- Premios
 <div class="main-color-background">
   <div class="container">
     <div class="row main-color-block-bis">
@@ -129,7 +129,7 @@ layout: default
   </div>
 </div>
 
-<!-- En la etapa posterior, las secciones de Resultados y Ganadores, reemplazan a la sección de premios
+ En la etapa posterior, las secciones de Resultados y Ganadores, reemplazan a la sección de premios -->
 
 <div class="grey-background">
   <div class="container">
@@ -145,12 +145,31 @@ layout: default
 </div>
 
 <div class="main-color-background">
-  <div class="container">
-    <div class="row main-color-block">
+  {% for winners in site.data.winners %}
+  <div class="container-fluid">
+    <div class="row main-color-block-bis">
       <div class="col-lg-10 col-lg-offset-1">
-        <h2>Ganadores</h2>
+        <h2>{{ winners.title }}</h2>
+      </div>
+      <div class="col-md-4 award">
+        <figure>
+          <img src="{{ winners.winner_one_image }}" alt="Award">
+          <figcaption>{{ winners.winner_one }}</figcaption>
+        </figure>
+      </div>
+      <div class="col-md-4 award">
+        <figure>
+          <img src="img/winners/winner_2.jpg" alt="Award">
+          <figcaption>{{ winners.winner_two }}</figcaption>
+        </figure>
+      </div>
+      <div class="col-md-4 award">
+        <figure>
+          <img src="img/winners/winner_3.jpg" alt="Award">
+          <figcaption>{{ winners.winner_three }}</figcaption>
+        </figure>
       </div>
     </div>
   </div>
+  {% endfor %}
 </div>
--->
