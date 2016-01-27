@@ -98,6 +98,23 @@ p {
   }
 }
 
+#myButton{
+  background-color: transparent;
+  background-image: none;
+  border: 0px solid transparent;
+  bottom: 20px !important;
+  left: 48% !important;
+  position: absolute;
+
+  @media screen and (max-width: 992px) {
+    left: 44% !important;
+  }
+
+  &:hover{
+    opacity: 0.7;
+  }
+}
+
 //white-block
 .white-block {
   margin: 5.313em 0;
