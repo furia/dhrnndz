@@ -62,7 +62,7 @@ id: Home
 <!-- Mapa -->
 <section class="main-color-background">
   <div class="container">
-    <div class="row main-color-block">
+    <div class="row main-color-block-bis">
       <div class="col-lg-10 col-lg-offset-1">
         {% for map in site.data.map %}
         <h2>{{ map.name }}</h2>
@@ -104,10 +104,10 @@ id: Home
   </div>
 </section>
 
-<!-- Premios
-<section class="main-color-background">
+<!-- Premios -->
+<!-- section class="main-color-background">
   <div class="container">
-    <div class="row main-color-block-bis">
+    <div class="row main-color-block">
       <div class="col-lg-10 col-lg-offset-1">
         {% for award_hash in site.data.awards %}
         {% assign award = award_hash[1] %}
@@ -130,9 +130,9 @@ id: Home
       </div>
     </div>
   </div>
-</section>
+</section -->
 
- En la etapa posterior, las secciones de Resultados y Ganadores, reemplazan a la sección de premios -->
+<!-- En la etapa posterior, las secciones de Resultados y Ganadores, reemplazan a la sección de premios -->
 
 <section class="grey-background">
   <div class="container">
@@ -162,13 +162,13 @@ id: Home
       </div>
       <div class="col-md-4 award">
         <figure>
-          <img src="img/winners/winner_2.jpg" alt="Award">
+          <img src="{{ winners.winner_two_image }}" alt="Award">
           <figcaption>{{ winners.winner_two }}</figcaption>
         </figure>
       </div>
       <div class="col-md-4 award">
         <figure>
-          <img src="img/winners/winner_3.jpg" alt="Award">
+          <img src="{{ winners.winner_three_image }}" alt="Award">
           <figcaption>{{ winners.winner_three }}</figcaption>
         </figure>
       </div>
