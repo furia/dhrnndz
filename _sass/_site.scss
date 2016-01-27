@@ -33,10 +33,18 @@ p {
   display: inline-block;
   float: none;
   margin-bottom: -10px;
+
+  @media screen and (max-width: 992px) {
+    margin-bottom: 10px;
+  }
 }
 
 .navbar .navbar-collapse {
   text-align: center;
+}
+
+.navbar-toggle .icon-bar{
+  background: $almost-black;
 }
 
 #main-menu a {
@@ -45,6 +53,10 @@ p {
   font-family: 'Oswald', sans-serif;
   font-size: 1.125em;
   padding: 2.5em 15px;
+
+  @media screen and (max-width: 992px) {
+    padding: 1.5em 5px;
+  }
 }
 
 #main-menu .nav > li > a:hover {
@@ -56,7 +68,12 @@ p {
 .image-bg-fluid-height {
   background: url('../img/background.jpg') no-repeat center center scroll;
   background-size: cover;
-  padding: 18.75em 0 16.25em 0;
+  padding: 20.75em 0 16.25em 0;
+  height: 100vh;
+
+  @media screen and (max-width: 992px) {
+    padding: 60% 0 0 0;
+  }
 
   h1 {
     color: $almost-white;
