@@ -53,6 +53,11 @@ p {
   font-family: 'Oswald', sans-serif;
   font-size: 1.125em;
   padding: 2.5em 15px;
+  -webkit-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -ms-transition: all .3s ease-out;
+  transition: all .3s ease-out;
 
   @media screen and (max-width: 992px) {
     padding: 1.5em 5px;
@@ -62,6 +67,15 @@ p {
 #main-menu .nav > li > a:hover {
   background-color: darken($main-color, 25%);
   color: $almost-white;
+}
+
+.scroll_padding a{
+  padding: 1em 15px !important;
+  -webkit-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -ms-transition: all .3s ease-out;
+  transition: all .3s ease-out;
 }
 
 //header
