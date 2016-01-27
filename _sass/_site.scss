@@ -47,7 +47,12 @@ p {
   padding: 2.5em 15px;
 }
 
-#main-menu .nav > li > a:hover {
+#main-menu .active {
+  background-color: darken($main-color, 10%);
+  color: $almost-white;
+}
+
+#main-menu a:hover {
   background-color: darken($main-color, 25%);
   color: $almost-white;
 }
