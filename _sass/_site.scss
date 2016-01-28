@@ -76,6 +76,10 @@ p {
 .white-block {
   margin: 5.313em 0;
 
+  ul, ol {
+    margin: 2em!important;
+  }
+
   h2 {
     border-bottom: solid 1px $light-grey;
     color: $main-color;
@@ -87,14 +91,48 @@ p {
     text-align: center;
   }
 
+  h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.500em;
+    font-weight: 300;
+  }
+
   h4 {
     color: $main-color;
     font-family: 'Oswald', sans-serif;
     font-size: 1.25em;
   }
 
+  a {
+    color: $main-color;
+  }
+
+  a:hover, a:visited {
+    color: darken($main-color, 25%);
+  }
+
   li {
     list-style: none;
+  }
+
+  .post-list {
+    margin-bottom: 0.938em;
+  }
+
+  .post-date {
+    color: $text-color;
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.875em;
+    font-weight: 300;
+    margin-bottom: 0.938em;
+  }
+
+  .post-title {
+    color: $text-color;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.500em;
+    font-weight: 300;
   }
 
 }
@@ -258,8 +296,10 @@ p {
 .black-background {
   background-color: $almost-black;
 }
+
 .footer-block {
   margin: 5.313em 0;
+
   .footer-list {
     margin-left: 0;
 
