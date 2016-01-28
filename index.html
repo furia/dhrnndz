@@ -1,5 +1,8 @@
 ---
 layout: default
+title: Hackaton | Hackaton
+description: Contenido principal sobre el hackaton.
+id: Home
 ---
 
 <!-- Imagen superior -->
@@ -17,7 +20,7 @@ layout: default
 </header>
 
 <!-- Objetivo del hackaton -->
-<div id="mydiv" class="container">
+<section id="mydiv" class="container">
   <div class="row white-block">
     <div class="col-lg-10 col-lg-offset-1">
       {% for goal in site.data.goal %}
@@ -26,10 +29,10 @@ layout: default
       {% endfor %}
     </div>
   </div>
-</div>
+</section>
 
 <!-- Agenda -->
-<div class="grey-background">
+<section class="grey-background">
   <div class="container">
     <div class="row grey-block">
       <div class="col-lg-10 col-lg-offset-1">
@@ -58,12 +61,12 @@ layout: default
       </div>
     </div>
   </div>
-</div>
+</section>
 
 <!-- Mapa -->
-<div class="main-color-background">
+<section class="main-color-background">
   <div class="container">
-    <div class="row main-color-block">
+    <div class="row main-color-block-bis">
       <div class="col-lg-10 col-lg-offset-1">
         {% for map in site.data.map %}
         <h2>{{ map.name }}</h2>
@@ -72,10 +75,10 @@ layout: default
       </div>
     </div>
   </div>
-</div>
+</section>
 
 <!-- Jueces -->
-<div class="container">
+<section class="container">
   <div class="row white-block-bis">
     <div class="col-lg-10 col-lg-offset-1">
       {% for judge_hash in site.data.judges %}
@@ -90,8 +93,8 @@ layout: default
                 <div class="col-xs-4">
                   <img class="img-circle extra-padding" src="{{ j.image }}" />
                 </div>
-                <div class="col-xs-8">
-                  <h4>{{ j.judge-name }}</h4>
+                <div class="col-lg-8">
+                  <h4>{{ j.name }}</h4>
                   <p>{{ j.description }}</p>
                 </div>
               </div>
@@ -103,12 +106,12 @@ layout: default
       {% endfor %}
     </div>
   </div>
-</div>
+</section>
 
-<!-- Premios
-<div class="main-color-background">
+<!-- Premios -->
+<!-- section class="main-color-background">
   <div class="container">
-    <div class="row main-color-block-bis">
+    <div class="row main-color-block">
       <div class="col-lg-10 col-lg-offset-1">
         {% for award_hash in site.data.awards %}
         {% assign award = award_hash[1] %}
@@ -131,11 +134,11 @@ layout: default
       </div>
     </div>
   </div>
-</div>
+</section -->
 
- En la etapa posterior, las secciones de Resultados y Ganadores, reemplazan a la sección de premios -->
+<!-- En la etapa posterior, las secciones de Resultados y Ganadores, reemplazan a la sección de premios -->
 
-<div class="grey-background">
+<section class="grey-background">
   <div class="container">
     <div class="row grey-block">
       <div class="col-lg-10 col-lg-offset-1 extra-margin">
@@ -146,9 +149,9 @@ layout: default
       </div>
     </div>
   </div>
-</div>
+</section>
 
-<div class="main-color-background">
+<section class="main-color-background">
   {% for winners in site.data.winners %}
   <div class="container-fluid">
     <div class="row main-color-block-bis">
@@ -163,17 +166,17 @@ layout: default
       </div>
       <div class="col-md-4 award">
         <figure>
-          <img src="img/winners/winner_2.jpg" alt="Award">
+          <img src="{{ winners.winner_two_image }}" alt="Award">
           <figcaption>{{ winners.winner_two }}</figcaption>
         </figure>
       </div>
       <div class="col-md-4 award">
         <figure>
-          <img src="img/winners/winner_3.jpg" alt="Award">
+          <img src="{{ winners.winner_three_image }}" alt="Award">
           <figcaption>{{ winners.winner_three }}</figcaption>
         </figure>
       </div>
     </div>
   </div>
   {% endfor %}
-</div>
+</section>
