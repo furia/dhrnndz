@@ -11,18 +11,14 @@ id: Rules
       {% for rule_hash in site.data.rules %}
       {% assign rule = rule_hash[1] %}
       <h2>{{ rule.name }}</h2>
-      <div class="row">
-        <ol>
-          {% for r in rule.rules %}
-          <li>
-            <div class="col-lg-12 extra-margin">
-              <h3>{{ r.title }}</h3>
-              <p>{{ r.text }}</p>
-            </div>
-          </li>
-          {% endfor %}
-        </ol>
-      </div>
+      <ol class="row">
+        {% for r in rule.rules %}
+        <li class="col-lg-12 extra-margin">
+          <h3>{{ r.title }}</h3>
+          <p>{{ r.text }}</p>
+        </li>
+        {% endfor %}
+      </ol>
       {% endfor %}
     </div>
   </div>

@@ -74,7 +74,7 @@ p {
   color: $almost-white;
 }
 
-.scroll_padding a{
+.scroll_padding a {
   padding: 1em 15px !important;
   -webkit-transition: all .3s ease-out;
   -o-transition: all .3s ease-out;
@@ -120,9 +120,11 @@ p {
   }
 }
 
-//white-block
 .white-block {
   margin: 5.313em 0;
+  @media (max-width:767px) {
+    margin: 2.625em 0;
+  }
 
   ul, ol {
     margin: 0!important;
@@ -182,11 +184,13 @@ p {
     font-size: 1.500em;
     font-weight: 300;
   }
-
 }
 
 .white-block-bis {
   margin: 5.313em 0 0 0;
+  @media (max-width:767px) {
+    margin: 2.625em 0 0 0;
+  }
 
   h2 {
     border-bottom: solid 1px $light-grey;
@@ -216,6 +220,9 @@ p {
 
 .grey-block {
   margin: 5.313em 0 0 0;
+  @media (max-width:767px) {
+    margin: 2.625em 0;
+  }
 
   h2 {
     border-bottom: solid 1px $light-grey;
@@ -235,6 +242,11 @@ p {
     font-weight: 300;
     padding-bottom: 1.250em;
     text-align: center;
+    @media (max-width:767px) { padding-bottom: 0;}
+    @media(min-width:768px){}
+    @media(min-width:992px){}
+    @media(min-width:1200px){}
+
   }
 
   p {
@@ -253,6 +265,9 @@ p {
 
 .main-color-block {
   margin: 5.313em 0;
+  @media (max-width:767px) {
+    margin: 2.625em 0;
+  }
 
   h2 {
     border-bottom: solid 1px $light-grey;
@@ -286,6 +301,9 @@ p {
 
 .main-color-block-bis {
   margin: 5.313em 0 0 0;
+  @media (max-width:767px) {
+    margin: 2.625em 0 0 0;
+  }
 
   h2 {
     color: $text-color;
@@ -378,6 +396,10 @@ p {
   .footer-icons {
     display: inline;
     float: left;
+    @media (max-width:767px) {
+      margin-left: 0;
+      margin-top: 1em;
+    }
 
     li {
       float: left;
@@ -393,10 +415,20 @@ p {
 
 .extra-margin {
   margin-bottom: 3.750em;
+  @media (max-width: 767px) {
+    margin-bottom: 1.875em;
+  }
 }
 
 .extra-margin-header {
   margin-top: 9.250em;
+  @media (max-width: 767px) {
+    margin-top: 6em;
+  }
+}
+
+.extra-margin-sides {
+  margin: 0 0.938em;
 }
 
 .extra-padding {
