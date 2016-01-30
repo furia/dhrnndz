@@ -14,13 +14,13 @@ id: Home
       </div>
     </div>
   </div>
-  <button id="myButton" type="button" placeholder=""/>
+  <button id="arrowButton" type="button" placeholder=""/>
     <img src="img/arrow.png">
   </button>
 </header>
 
 <!-- Objetivo del hackaton -->
-<section id="mydiv" class="container">
+<section id="titleWithArrow" class="container">
   <div class="row white-block">
     <div class="col-lg-10 col-lg-offset-1">
       {% for goal in site.data.goal %}
@@ -62,7 +62,7 @@ id: Home
 <!-- Mapa -->
 <section class="main-color-background">
   <div class="container">
-    <div class="row main-color-block-bis">
+    <div class="row main-color-block">
       <div class="col-lg-10 col-lg-offset-1">
         {% for map in site.data.map %}
         <h2>{{ map.name }}</h2>
@@ -101,13 +101,13 @@ id: Home
 </section>
 
 <!-- Premios -->
-<!-- section class="main-color-background">
+<section class="main-color-background">
   <div class="container">
     <div class="row main-color-block">
       <div class="col-lg-10 col-lg-offset-1">
         {% for award_hash in site.data.awards %}
         {% assign award = award_hash[1] %}
-        <h2>{{ award.name }}</h2>
+        <h2  class="border-title">{{ award.name }}</h2>
         <ul class="row">
           {% for a in award.awards %}
           <li>
@@ -124,7 +124,7 @@ id: Home
       </div>
     </div>
   </div>
-</section -->
+</section>
 
 <!-- En la etapa posterior, las secciones de Resultados y Ganadores, reemplazan a la sección de premios -->
 
@@ -144,7 +144,7 @@ id: Home
 <section class="main-color-background">
   {% for winners in site.data.winners %}
   <div class="container-fluid">
-    <div class="row main-color-block-bis">
+    <div class="row main-color-block">
       <div class="col-lg-10 col-lg-offset-1">
         <h2>{{ winners.title }}</h2>
       </div>
