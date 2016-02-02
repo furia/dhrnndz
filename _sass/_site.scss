@@ -24,105 +24,11 @@ p {
   text-align: center;
 }
 
-// navbar
-.navbar {
-  background: $main-color!important;
-}
-
-.navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-  margin-bottom: -10px;
-
-  @media screen and (max-width: 992px) {
-    margin-bottom: 10px;
-  }
-}
-
-.navbar .navbar-collapse {
-  text-align: center;
-}
-
-.navbar-toggle .icon-bar{
-  background: $almost-black;
-}
-
-#main-menu a {
-  bottom: 3px;
-  color: black;
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.125em;
-  padding: 2.5em 15px;
-  -webkit-transition: all .3s ease-out;
-  -o-transition: all .3s ease-out;
-  -moz-transition: all .3s ease-out;
-  -ms-transition: all .3s ease-out;
-  transition: all .3s ease-out;
-
-  @media screen and (max-width: 992px) {
-    padding: 1.5em 5px;
-  }
-}
-
-#main-menu .active {
-  background-color: darken($main-color, 10%);
-  color: $almost-white;
-}
-
-#main-menu a:hover {
-  background-color: darken($main-color, 25%);
-  color: $almost-white;
-}
-
-.scroll_padding a{
-  padding: 1em 15px !important;
-  -webkit-transition: all .3s ease-out;
-  -o-transition: all .3s ease-out;
-  -moz-transition: all .3s ease-out;
-  -ms-transition: all .3s ease-out;
-  transition: all .3s ease-out;
-}
-
-//header
-.image-bg-fluid-height {
-  background: url('../img/background.jpg') no-repeat center center scroll;
-  background-size: cover;
-  padding: 20.75em 0 16.25em 0;
-  height: 100vh;
-
-  @media screen and (max-width: 992px) {
-    padding: 60% 0 0 0;
-  }
-
-  h1 {
-    color: $almost-white;
-    font-family: 'Oswald', sans-serif;
-    font-size: 2.5em;
-    font-weight: 300;
-    line-height: 1.75em;
-  }
-}
-
-#myButton{
-  background-color: transparent;
-  background-image: none;
-  border: 0px solid transparent;
-  bottom: 20px !important;
-  left: 48% !important;
-  position: absolute;
-
-  @media screen and (max-width: 992px) {
-    left: 44% !important;
-  }
-
-  &:hover{
-    opacity: 0.7;
-  }
-}
-
-//white-block
 .white-block {
   margin: 5.313em 0;
+  @media portrait and (max-width:767px) {
+    margin: 2.625em 0;
+  }
 
   ul, ol {
     margin: 0!important;
@@ -137,6 +43,9 @@ p {
     margin-bottom: 0.938em;
     padding-bottom: 1.250em;
     text-align: center;
+    @media portrait and (max-width:767px) {
+      padding-bottom: 0.938em;
+    }
   }
 
   h3 {
@@ -165,6 +74,9 @@ p {
 
   .post-list {
     margin-bottom: 0.938em;
+    @media portrait and (max-width:767px) {
+      margin-bottom: 1.875em;
+    }
   }
 
   .post-date {
@@ -182,11 +94,13 @@ p {
     font-size: 1.500em;
     font-weight: 300;
   }
-
 }
 
 .white-block-bis {
   margin: 5.313em 0 0 0;
+  @media portrait and (max-width:767px) {
+    margin: 2.625em 0 0 0;
+  }
 
   h2 {
     border-bottom: solid 1px $light-grey;
@@ -197,6 +111,9 @@ p {
     margin-bottom: 0.938em;
     padding-bottom: 1.250em;
     text-align: center;
+    @media portrait and (max-width:767px) {
+      padding-bottom: 0.938em;
+    }
   }
 
   h4 {
@@ -216,6 +133,9 @@ p {
 
 .grey-block {
   margin: 5.313em 0 0 0;
+  @media portrait and (max-width:767px) {
+    margin: 2.625em 0 0 0;
+  }
 
   h2 {
     border-bottom: solid 1px $light-grey;
@@ -226,6 +146,9 @@ p {
     margin-bottom: 0.938em;
     padding-bottom: 1.250em;
     text-align: center;
+    @media portrait and (max-width:767px) {
+      padding-bottom: 0.938em;
+    }
   }
 
   h3 {
@@ -235,6 +158,11 @@ p {
     font-weight: 300;
     padding-bottom: 1.250em;
     text-align: center;
+    @media portrait and (max-width:767px) { padding-bottom: 0;}
+    @media(min-width:768px){}
+    @media(min-width:992px){}
+    @media(min-width:1200px){}
+
   }
 
   p {
@@ -252,17 +180,27 @@ p {
 }
 
 .main-color-block {
-  margin: 5.313em 0;
+  margin: 5.313em 0 0 0;
+  @media portrait and (max-width:767px) {
+    margin: 2.625em 0 0 0;
+  }
 
   h2 {
-    border-bottom: solid 1px $light-grey;
     color: $text-color;
     font-family: 'Oswald', sans-serif;
     font-size: 2.250em;
     font-weight: 300;
-    margin-bottom: 0.938em;
+    margin-bottom: 0;
     padding-bottom: 1.250em;
     text-align: center;
+    @media portrait and (max-width:767px) {
+      padding-bottom: 0.938em;
+    }
+  }
+
+  .border-title {
+    border-bottom: solid 1px $light-grey;
+    margin-bottom: 0.938em;
   }
 
   h3 {
@@ -272,6 +210,9 @@ p {
     font-weight: 300;
     padding-bottom: 1.250em;
     text-align: center;
+    @media portrait and (max-width:767px) {
+      padding-bottom: 0;
+    }
   }
 
   p {
@@ -282,29 +223,14 @@ p {
     list-style: none;
     padding-right: 1em;
   }
-}
-
-.main-color-block-bis {
-  margin: 5.313em 0 0 0;
-
-  h2 {
-    color: $text-color;
-    font-family: 'Oswald', sans-serif;
-    font-size: 2.250em;
-    font-weight: 300;
-    margin-bottom: 0;
-    padding-bottom: 1.250em;
-    text-align: center;
-  }
-
-  p {
-    color: $text-color;
-  }
 
   .map {
     height: 31.250em;
     margin-bottom: 5.313em;
     width: 100%;
+    @media portrait and (max-width:767px) {
+      margin-bottom: 2.625em;
+    }
   }
 }
 
@@ -345,58 +271,25 @@ p {
   background-color: $almost-black;
 }
 
-.footer-block {
-  margin: 5.313em 0;
-
-  .footer-list {
-    margin-left: 0;
-
-    li {
-      color: $almost-white;
-      font-family: 'Oswald', sans-serif;
-      font-size: 1.313em;
-      list-style: none;
-      margin-bottom: 0.938em;
-
-      a {
-        color: $almost-white;
-        text-decoration: underline;
-      }
-    }
-
-    p {
-      color: $almost-white;
-      font-size: 1em;
-      margin-left: 0.938em;
-    }
-    a {
-      color: $almost-white;
-      text-decoration: underline;
-    }
-  }
-
-  .footer-icons {
-    display: inline;
-    float: left;
-
-    li {
-      float: left;
-      list-style: none;
-      padding-right: 1em;
-    }
-
-    img {
-      width: 1.875em;
-    }
-  }
-}
-
 .extra-margin {
   margin-bottom: 3.750em;
+  @media (max-width: 767px) {
+    margin-bottom: 1.875em;
+  }
 }
 
 .extra-margin-header {
   margin-top: 9.250em;
+  @media (max-width: 767px) {
+    margin-top: 6em;
+  }
+}
+
+.extra-margin-sides {
+  margin: 0 0.938em;
+  @media (max-width: 767px) {
+    margin: 0;
+  }
 }
 
 .extra-padding {
