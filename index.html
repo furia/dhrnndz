@@ -24,7 +24,7 @@ id: Home
   <div class="row white-block">
     <div class="col-lg-10 col-lg-offset-1">
       {% for goal in site.data.goal %}
-      <h2>{{ goal.name }}</h2>
+      <h2 class="animated fadeIn wow">{{ goal.name }}</h2>
       <p class="extra-margin-sides">{{ goal.description}}</p>
       {% endfor %}
     </div>
@@ -38,7 +38,7 @@ id: Home
       <div class="col-lg-10 col-lg-offset-1">
         {% for agenda_hash in site.data.agenda %}
         {% assign agenda = agenda_hash[1] %}
-        <h2>{{ agenda.name }}</h2>
+        <h2 class="animated fadeIn wow">{{ agenda.name }}</h2>
         <ul class="row">
           {% for a in agenda.agenda %}
           <li class="col-md-6 col-sm-6 extra-margin">
@@ -65,7 +65,7 @@ id: Home
     <div class="row main-color-block">
       <div class="col-lg-10 col-lg-offset-1">
         {% for map in site.data.map %}
-        <h2>{{ map.name }}</h2>
+        <h2 class="animated fadeIn wow">{{ map.name }}</h2>
         {{ map.description}}
         {% endfor %}
       </div>
@@ -74,7 +74,7 @@ id: Home
 </section>
 
 <!-- Jueces -->
-<section class="container">
+<section class="container animated fadeIn wow">
   <div class="row white-block-bis">
     <div class="col-lg-10 col-lg-offset-1">
       {% for judge_hash in site.data.judges %}
@@ -101,7 +101,7 @@ id: Home
 </section>
 
 <!-- Premios -->
-<section class="main-color-background">
+<section class="main-color-background animated fadeIn wow">
   <div class="container">
     <div class="row main-color-block">
       <div class="col-lg-10 col-lg-offset-1">
@@ -128,7 +128,7 @@ id: Home
 
 <!-- En la etapa posterior, las secciones de Resultados y Ganadores, reemplazan a la sección de premios -->
 
-<section class="grey-background">
+<section class="grey-background animated fadeIn wow">
   <div class="container">
     <div class="row grey-block">
       <div class="col-lg-10 col-lg-offset-1 extra-margin">
@@ -141,7 +141,7 @@ id: Home
   </div>
 </section>
 
-<section class="main-color-background">
+<section class="main-color-background animated fadeIn wow">
   {% for winners in site.data.winners %}
   <div class="container-fluid">
     <div class="row main-color-block">
