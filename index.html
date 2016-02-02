@@ -41,7 +41,7 @@ id: Home
         <h2>{{ agenda.name }}</h2>
         <ul class="row">
           {% for a in agenda.agenda %}
-          <li class="col-md-6 extra-margin">
+          <li class="col-md-6 col-sm-6 extra-margin">
             <div class="row">
               <div class="col-md-4">
                 <h3>{{ a.name }}</h3>
@@ -82,12 +82,12 @@ id: Home
       <h2>{{ judge.name }}</h2>
       <ul class="row">
         {% for j in judge.judges %}
-        <li class="col-md-6 extra-margin">
+        <li class="col-md-6 col-sm-6 extra-margin">
           <div class="row">
-            <div class="col-xs-4">
+            <div class="col-md-4 col-sm-4 col-xs-4">
               <img class="img-circle" src="{{ j.image }}" />
             </div>
-            <div class="col-lg-8">
+            <div class="col-md-8 col-sm-8">
               <h4>{{ j.name }}</h4>
               <p>{{ j.description }}</p>
             </div>
@@ -107,14 +107,14 @@ id: Home
       <div class="col-lg-10 col-lg-offset-1">
         {% for award_hash in site.data.awards %}
         {% assign award = award_hash[1] %}
-        <h2  class="border-title">{{ award.name }}</h2>
+        <h2 class="border-title">{{ award.name }}</h2>
         <ul class="row">
           {% for a in award.awards %}
           <li>
-            <div class="col-lg-2">
+            <div class="col-md-2 col-sm-4">
               <h3>{{ a.name }}</h3>
             </div>
-            <div class="col-lg-10 extra-margin">
+            <div class="col-md-10 col-sm-8 extra-margin">
               <p>{{ a.description }}</p>
             </div>
           </li>
@@ -148,19 +148,19 @@ id: Home
       <div class="col-lg-10 col-lg-offset-1">
         <h2>{{ winners.title }}</h2>
       </div>
-      <div class="col-md-4 award">
+      <div class="col-md-4 col-sm-4 award">
         <figure>
           <img src="{{ winners.winner_one_image }}" alt="Award">
           <figcaption>{{ winners.winner_one }}</figcaption>
         </figure>
       </div>
-      <div class="col-md-4 award">
+      <div class="col-md-4 col-sm-4 award">
         <figure>
           <img src="{{ winners.winner_two_image }}" alt="Award">
           <figcaption>{{ winners.winner_two }}</figcaption>
         </figure>
       </div>
-      <div class="col-md-4 award">
+      <div class="col-md-4 col-sm-4 award">
         <figure>
           <img src="{{ winners.winner_three_image }}" alt="Award">
           <figcaption>{{ winners.winner_three }}</figcaption>

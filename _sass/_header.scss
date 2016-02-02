@@ -63,8 +63,14 @@
   padding: 20.75em 0 16.25em 0;
   height: 100vh;
 
-  @media screen and (max-width: 992px) {
+  /*@media screen and (max-width: 992px) {
     padding: 60% 0 0 0;
+  }*/
+  @media (max-width:767px) {
+    padding: 7.813em 0 6.250em 0;
+  }
+  @media (min-width:768px) and (max-width: 991px) {
+
   }
 
   h1 {
