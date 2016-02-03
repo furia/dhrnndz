@@ -9,7 +9,7 @@ id: Home
 <header class="image-bg-fluid-height">
   <div class="container">
     <div class="row text-center">
-      <div class="col-lg-10 col-lg-offset-1">
+      <div class="col-lg-10 col-lg-offset-1 animated fadeIn wow">
         <h1>{{ site.title }}</h1>
       </div>
     </div>
@@ -20,7 +20,7 @@ id: Home
 </header>
 
 <!-- Objetivo del hackaton -->
-<section id="titleWithArrow" class="container">
+<section id="titleWithArrow" class="container animated fadeIn wow">
   <div class="row white-block">
     <div class="col-lg-10 col-lg-offset-1">
       {% for goal in site.data.goal %}
@@ -32,13 +32,13 @@ id: Home
 </section>
 
 <!-- Agenda -->
-<section class="grey-background">
-  <div class="container">
+<section class="grey-background animated fadeIn wow">
+  <div class="container" data-wow-delay="1s">
     <div class="row grey-block">
       <div class="col-lg-10 col-lg-offset-1">
         {% for agenda_hash in site.data.agenda %}
         {% assign agenda = agenda_hash[1] %}
-        <h2 class="animated fadeIn wow">{{ agenda.name }}</h2>
+        <h2>{{ agenda.name }}</h2>
         <ul class="row">
           {% for a in agenda.agenda %}
           <li class="col-md-6 col-sm-6 extra-margin">
@@ -60,12 +60,12 @@ id: Home
 </section>
 
 <!-- Mapa -->
-<section class="main-color-background">
+<section class="main-color-background animated fadeIn wow">
   <div class="container">
     <div class="row main-color-block">
       <div class="col-lg-10 col-lg-offset-1">
         {% for map in site.data.map %}
-        <h2 class="animated fadeIn wow">{{ map.name }}</h2>
+        <h2>{{ map.name }}</h2>
         {{ map.description}}
         {% endfor %}
       </div>
