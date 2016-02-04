@@ -141,7 +141,7 @@ id: Home
   </div>
 </section>
 
-<section class="main-color-background animated fadeIn wow">
+<!-- section class="main-color-background animated fadeIn wow">
   {% for winners in site.data.winners %}
   <div class="container-fluid">
     <div class="row main-color-block">
@@ -169,4 +169,33 @@ id: Home
     </div>
   </div>
   {% endfor %}
+</section -->
+
+<section class="main-color-background animated fadeIn wow">
+  <div class="container-fluid">
+    <div class="row main-color-block">
+      {% for winner_hash in site.data.winners %}
+      {% assign winner = winner_hash[1] %}
+      <div class="col-lg-10 col-lg-offset-1">
+        <h2>{{ winner.name }}</h2>
+      </div>
+      <ul  class="no-margin">
+        {% for w in winner.winners %}
+        <li>
+          <div class="col-md-4 col-sm-4 award">
+            <figure>
+              <img src="{{ w.image }}" alt="Award">
+              <figcaption>
+                <h4>{{ w.name }}</h4>
+                <p>{{ w.description }}</p>
+              </figcaption>
+            </figure>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+      {% endfor %}
+      </div>
+    </div>
+  </div>
 </section>
