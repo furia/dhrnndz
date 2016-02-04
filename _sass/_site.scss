@@ -9,6 +9,9 @@ $almost-white: #f2f2f2;
 $light-grey: #d7d8d8;
 $almost-black: #050505;
 
+html {
+  font-size: 100%;
+}
 body {
   padding-top: 50px;
 }
@@ -219,9 +222,14 @@ p {
     color: $text-color;
   }
 
+  ul {
+    margin-left: 0;
+    margin-bottom: 0!important;
+  }
+
   li {
     list-style: none;
-    padding-right: 1em;
+    /*padding-right: 1em;*/
   }
 
   .map {
@@ -294,4 +302,8 @@ p {
 
 .extra-padding {
   padding-bottom: 15px;
+}
+
+.no-margin {
+  margin-left: 0!important;
 }

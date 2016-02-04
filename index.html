@@ -9,7 +9,7 @@ id: Home
 <header class="image-bg-fluid-height">
   <div class="container">
     <div class="row text-center">
-      <div class="col-lg-10 col-lg-offset-1">
+      <div class="col-lg-10 col-lg-offset-1 animated fadeIn wow">
         <h1>{{ site.title }}</h1>
       </div>
     </div>
@@ -20,11 +20,11 @@ id: Home
 </header>
 
 <!-- Objetivo del hackaton -->
-<section id="titleWithArrow" class="container">
+<section id="titleWithArrow" class="container animated fadeIn wow">
   <div class="row white-block">
     <div class="col-lg-10 col-lg-offset-1">
       {% for goal in site.data.goal %}
-      <h2>{{ goal.name }}</h2>
+      <h2 class="animated fadeIn wow">{{ goal.name }}</h2>
       <p class="extra-margin-sides">{{ goal.description}}</p>
       {% endfor %}
     </div>
@@ -32,8 +32,8 @@ id: Home
 </section>
 
 <!-- Agenda -->
-<section class="grey-background">
-  <div class="container">
+<section class="grey-background animated fadeIn wow">
+  <div class="container" data-wow-delay="1s">
     <div class="row grey-block">
       <div class="col-lg-10 col-lg-offset-1">
         {% for agenda_hash in site.data.agenda %}
@@ -43,10 +43,10 @@ id: Home
           {% for a in agenda.agenda %}
           <li class="col-md-6 col-sm-6 extra-margin">
             <div class="row">
-              <div class="col-md-4">
+              <div class="col-md-4 col-sm-4">
                 <h3>{{ a.name }}</h3>
               </div>
-              <div class="col-md-8">
+              <div class="col-md-8 col-md-8">
                 <p>{{ a.description }}</p>
               </div>
             </div>
@@ -60,7 +60,7 @@ id: Home
 </section>
 
 <!-- Mapa -->
-<section class="main-color-background">
+<section class="main-color-background animated fadeIn wow">
   <div class="container">
     <div class="row main-color-block">
       <div class="col-lg-10 col-lg-offset-1">
@@ -74,7 +74,7 @@ id: Home
 </section>
 
 <!-- Jueces -->
-<section class="container">
+<section class="container animated fadeIn wow">
   <div class="row white-block-bis">
     <div class="col-lg-10 col-lg-offset-1">
       {% for judge_hash in site.data.judges %}
@@ -87,7 +87,7 @@ id: Home
             <div class="col-md-4 col-sm-4 col-xs-4">
               <img class="img-circle" src="{{ j.image }}" />
             </div>
-            <div class="col-md-8 col-sm-8">
+            <div class="col-md-8 col-sm-8 col-xs-8">
               <h4>{{ j.name }}</h4>
               <p>{{ j.description }}</p>
             </div>
@@ -101,7 +101,7 @@ id: Home
 </section>
 
 <!-- Premios -->
-<section class="main-color-background">
+<section class="main-color-background animated fadeIn wow">
   <div class="container">
     <div class="row main-color-block">
       <div class="col-lg-10 col-lg-offset-1">
@@ -128,7 +128,7 @@ id: Home
 
 <!-- En la etapa posterior, las secciones de Resultados y Ganadores, reemplazan a la sección de premios -->
 
-<section class="grey-background">
+<!-- section class="grey-background animated fadeIn wow">
   <div class="container">
     <div class="row grey-block">
       <div class="col-lg-10 col-lg-offset-1 extra-margin">
@@ -141,32 +141,31 @@ id: Home
   </div>
 </section>
 
-<section class="main-color-background">
-  {% for winners in site.data.winners %}
+<section class="main-color-background animated fadeIn wow">
   <div class="container-fluid">
     <div class="row main-color-block">
+      {% for winner_hash in site.data.winners %}
+      {% assign winner = winner_hash[1] %}
       <div class="col-lg-10 col-lg-offset-1">
-        <h2>{{ winners.title }}</h2>
+        <h2>{{ winner.name }}</h2>
       </div>
-      <div class="col-md-4 col-sm-4 award">
-        <figure>
-          <img src="{{ winners.winner_one_image }}" alt="Award">
-          <figcaption>{{ winners.winner_one }}</figcaption>
-        </figure>
-      </div>
-      <div class="col-md-4 col-sm-4 award">
-        <figure>
-          <img src="{{ winners.winner_two_image }}" alt="Award">
-          <figcaption>{{ winners.winner_two }}</figcaption>
-        </figure>
-      </div>
-      <div class="col-md-4 col-sm-4 award">
-        <figure>
-          <img src="{{ winners.winner_three_image }}" alt="Award">
-          <figcaption>{{ winners.winner_three }}</figcaption>
-        </figure>
+      <ul  class="no-margin">
+        {% for w in winner.winners %}
+        <li>
+          <div class="col-md-4 col-sm-4 award">
+            <figure>
+              <img src="{{ w.image }}" alt="Award">
+              <figcaption>
+                <h4>{{ w.name }}</h4>
+                <p>{{ w.description }}</p>
+              </figcaption>
+            </figure>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+      {% endfor %}
       </div>
     </div>
   </div>
-  {% endfor %}
-</section>
+</section -->
