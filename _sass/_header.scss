@@ -6,10 +6,6 @@
   display: inline-block;
   float: none;
   margin-bottom: -10px;
-
-  /*@media screen and (max-width: 992px) {
-    margin-bottom: 10px;
-  }*/
 }
 
 .navbar .navbar-collapse {
@@ -26,7 +22,7 @@
 }
 #main-menu a {
   bottom: 3px;
-  color: black;
+  color: $almost-black;
   font-family: 'Oswald', sans-serif;
   font-size: 1.125em;
   padding: 2.5em 15px;
@@ -35,10 +31,6 @@
   -moz-transition: all .3s ease-out;
   -ms-transition: all .3s ease-out;
   transition: all .3s ease-out;
-
-  /*@media screen and (max-width: 992px) {
-    padding: 1.5em 5px;
-  }*/
 }
 
 #main-menu .active {

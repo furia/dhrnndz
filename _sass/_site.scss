@@ -286,6 +286,13 @@ p {
   }
 }
 
+.extra-margin-text {
+  margin-bottom: 5.313em;
+  @media (max-width: 767px) {
+    margin-bottom: 2.625em;
+  }
+}
+
 .extra-margin-header {
   margin-top: 9.250em;
   @media (max-width: 767px) {
