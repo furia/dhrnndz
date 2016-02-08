@@ -1,1 +1,7 @@
 # hackatones
+
+## Instalación
+
+## Uso
+
+## Licencia
