@@ -12,6 +12,7 @@ $almost-black: #050505;
 html {
   font-size: 100%;
 }
+
 body {
   padding-top: 50px;
 }
@@ -76,7 +77,9 @@ p {
   }
 
   .post-list {
-    margin-bottom: 0.938em;
+    margin-bottom: 2.5em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid $light-grey;
     @media portrait and (max-width:767px) {
       margin-bottom: 1.875em;
     }
@@ -161,11 +164,9 @@ p {
     font-weight: 300;
     padding-bottom: 1.250em;
     text-align: center;
-    @media portrait and (max-width:767px) { padding-bottom: 0;}
-    @media(min-width:768px){}
-    @media(min-width:992px){}
-    @media(min-width:1200px){}
-
+    @media portrait and (max-width:767px) {
+      padding-bottom: 0;
+    }
   }
 
   p {
@@ -229,7 +230,6 @@ p {
 
   li {
     list-style: none;
-    /*padding-right: 1em;*/
   }
 
   .map {

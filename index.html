@@ -32,6 +32,7 @@ id: Home
 </section>
 
 <!-- Agenda -->
+{%if site.agenda %}
 <section class="grey-background animated fadeIn wow">
   <div class="container" data-wow-delay="1s">
     <div class="row grey-block">
@@ -58,8 +59,10 @@ id: Home
     </div>
   </div>
 </section>
+{% endif %}
 
 <!-- Mapa -->
+{% if site.mapa %}
 <section class="main-color-background animated fadeIn wow">
   <div class="container">
     <div class="row main-color-block">
@@ -72,6 +75,7 @@ id: Home
     </div>
   </div>
 </section>
+{% endif %}
 
 <!-- Jueces -->
 <section class="container animated fadeIn wow">
@@ -101,6 +105,7 @@ id: Home
 </section>
 
 <!-- Premios -->
+{% if site.premios %}
 <section class="main-color-background animated fadeIn wow">
   <div class="container">
     <div class="row main-color-block">
@@ -125,9 +130,9 @@ id: Home
     </div>
   </div>
 </section>
+{% endif %}
 
-<!-- En la etapa posterior, las secciones de Resultados y Ganadores, reemplazan a la sección de premios -->
-
+{% if.site.resultados %}
 <section class="grey-background animated fadeIn wow">
   <div class="container">
     <div class="row grey-block">
@@ -140,7 +145,9 @@ id: Home
     </div>
   </div>
 </section>
+{% endif %}
 
+{% if site.ganadores %}
 <section class="main-color-background animated fadeIn wow">
   <div class="container-fluid">
     <div class="row main-color-block">
@@ -149,7 +156,7 @@ id: Home
       <div class="col-lg-10 col-lg-offset-1">
         <h2>{{ winner.name }}</h2>
       </div>
-      <ul  class="no-margin">
+      <ul class="no-margin">
         {% for w in winner.winners %}
         <li>
           <div class="col-md-4 col-sm-4 award">
@@ -169,3 +176,4 @@ id: Home
     </div>
   </div>
 </section>
+{% endif %}
