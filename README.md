@@ -35,5 +35,7 @@ Antes de subir tu sitio, realiza los cambios necesarios en `_config.yml`
 
 - Este tema esta pensado para manejar una gama cromática específica, si deseas modificar los colores debes ir a `_sass/_site.scss` y ubicar el bloque `Variables de color para el tema`
 
+- Para generar comentarios en los publicaciones, deberás utilizar Facebook comments.
+
 ## Licencia
 MIT. Copyright (c) [Nombre del proveedor ](http://sitiodelproveedor.com)
