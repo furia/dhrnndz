@@ -33,7 +33,9 @@ Antes de subir tu sitio, realiza los cambios necesarios en `_config.yml`
 
   Las imágenes de los post deben estár en el directorio `/post-images` y el vínculo en el archivo almacenado en `_posts/` debe coincidir
 
-- Este tema esta pensado para manejar una gama cromática específica, si deseas modificar los colores debes ir a `_sass/_site.scss` y ubicar el bloque `Variables de color para el tema`
+- Este tema esta pensado para manejar una gama cromática específica, si deseas modificar los colores debes ir a `_sass/_site.scss` y ubicar el bloque `// Variables de color para el tema`
+
+- Para cambiar la imagen de fondo que aparece en la página de inicio deberás reemplazar `img/background.jpg`por la que tu desees, las dimensiones de esta son: 1100 x 733 px
 
 - Para generar comentarios en los publicaciones, deberás utilizar Facebook comments.
 

@@ -4,22 +4,22 @@ judges:
     description: |
       Lorem ipsum d olor sit amet, consectetur adipiscing elit.
       Lorem ipsum dolor sit amet, consectetur adi piscing elit.
-    image: /img/judges/juez.png
+    image: img/judges/juez.png
 
   - name: 2do juez
     description: |
       Lorem ipsum d olor sit amet, consectetur adipiscing elit.
       Lorem ipsum dolor sit amet, consectetur adi piscing elit.
-    image: /img/judges/juez.png
+    image: img/judges/juez.png
 
   - name: 3er juez
     description: |
       Lorem ipsum d olor sit amet, consectetur adipiscing elit.
       Lorem ipsum dolor sit amet, consectetur adi piscing elit.
-    image: /img/judges/juez.png
+    image: img/judges/juez.png
 
   - name: 4to juez
     description: |
       Lorem ipsum d olor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adi piscing elit.
       Lorem ipsum d olor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adi piscing elit.
-    image: /img/judges/juez.png
+    image: img/judges/juez.png
