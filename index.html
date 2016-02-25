@@ -33,9 +33,9 @@ id: Home
 
 <!-- Agenda -->
 {%if site.agenda %}
-<section class="grey-background animated fadeIn wow">
+<section class="secondary-color-background animated fadeIn wow">
   <div class="container" data-wow-delay="1s">
-    <div class="row grey-block">
+    <div class="row secondary-color-block">
       <div class="col-lg-10 col-lg-offset-1">
         {% for agenda_hash in site.data.agenda %}
         {% assign agenda = agenda_hash[1] %}
@@ -133,9 +133,9 @@ id: Home
 {% endif %}
 
 {% if.site.resultados %}
-<section class="grey-background animated fadeIn wow">
+<section class="secondary-color-background animated fadeIn wow">
   <div class="container">
-    <div class="row grey-block">
+    <div class="row secondary-color-block">
       <div class="col-lg-10 col-lg-offset-1 extra-margin-text">
         {% for results in site.data.results %}
         <h2>{{ results.name }}</h2>
