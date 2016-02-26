@@ -20,5 +20,11 @@ id: Post
     </div>
   </div>
 
-    <div class="fb-comments" data-href="http://innku.github.io/hackatones/" data-width="100%" data-numposts="10"></div>
+  {% include facebook-init.html %}
+   {% if page.fbcomments %}
+     <hr/>
+     <h4>Comments</h4>
+     <div class="fb-comments" data-href="{{ page.url }}" data-width="100%" data-numposts="10"></div>
+   {% endif %}
+
 </div>

@@ -39,5 +39,7 @@ Antes de subir tu sitio, realiza los cambios necesarios en `_config.yml`
 
 - Para generar comentarios en los publicaciones, deberás utilizar Facebook comments.
 
+  Crear una nueva aplicación en `My Apps` para obtener tu número de identificación
+
 ## Licencia
 MIT. Copyright (c) [Nombre del proveedor ](http://sitiodelproveedor.com)

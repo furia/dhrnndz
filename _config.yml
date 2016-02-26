@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "/hackatones"
-url: "http://yourdomain.com"
+url: "http://innku.github.io/hackatones/"
 
 # Variables de contenido
 # Hay dos escenarios uno previo a la fecha de inicio y otro posterior al término del evento
@@ -23,6 +23,11 @@ ganadores: false
 # Google analytics
 google_analytics: true
 tracking_id: UA-000000-0
+
+# Facebook comments
+fbcomments: true
+facebookComments_id: 832650810194891
+api_version: v2.5
 
 # Build settings
 markdown: kramdown

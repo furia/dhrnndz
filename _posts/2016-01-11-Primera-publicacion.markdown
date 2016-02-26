@@ -3,6 +3,7 @@ layout: post
 title:  "Primera publicación"
 date:   2016-01-11 16:00:00 -0600
 categories: jekyll update
+fbcomments: yes
 ---
 
 Para más información relacionada a publicaciónes consultar: [Writing posts][jekyll-post].

@@ -15,11 +15,13 @@
 .navbar-toggle .icon-bar{
   background: $almost-black;
 }
+
 #main-menu {
   -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
 }
+
 #main-menu a {
   bottom: 3px;
   color: $almost-black;
@@ -59,9 +61,6 @@
   padding: 52vh 0 0 0;
   height: 100vh;
 
-  /*@media screen and (max-width: 992px) {
-    padding: 60% 0 0 0;
-  }*/
   @media (max-width:767px) {
     padding: 40vh 0 0 0;
   }
