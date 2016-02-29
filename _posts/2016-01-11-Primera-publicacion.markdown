@@ -18,6 +18,6 @@ Sed eget sapien accumsan dolor luctus pulvinar. Nulla facilisi. Donec arcu lacus
 
 ![Imagen]({{ site.baseurl }}/post-images/2016-01-11-image.png)
 
-![Imagen-2](/post-images/2016-01-11-image-2.png)
+![Imagen-2]({{ site.baseurl }}/post-images/2016-01-11-image-2.png)
 
 [jekyll-post]: http://jekyllrb.com/docs/posts/

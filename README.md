@@ -1,7 +1,23 @@
 # hackatones
 
+Este proyecto está pensado para ofrecer una opción no compleja de implementar y accesible para gestionar información relacionada a un hackatón.
+
+La información está distribuida en bloques por lo que cada uno de ellos tiene un archivo independiente que puedes editar para incluir la tuya.
+
+Este tema está pensado para dos escenarios: uno antes/durante y uno posterior o al cierre del evento.
+
+El antes/durante, inicia desde que ya se ha decidido y logrado concretar los aspectos operativos de un hackatón. Aquí la información debe ser clara, puntual y se debe adelantar a responder a las preguntas más comunes que puedan tener los interesados.
+
+El escenario posterior, comienza a ser útil una vez que el hackatón a llegado a su término, es ideal hacer saber de manera pública cuáles fueron los logros que se obtuvieron, así como quienes fueron los ganadores.
+
+Hacer el cambio de escenario implica hacer algunos cambios de datos.
+
+Cabe mencionar que el contenido es responsivo y de apariencia editable. Funciona utilizando plataformas como http://jekyllrb.com/ y servicios como https://github.com/, entre otros.
+
 ## Instalación
 Para una instalación fácil, deberás tener presente ciertos requerimientos y comandos, para ello consulta `http://jekyllrb.com/docs/quickstart/`
+
+Debes bajar el tema [desde aquí](https://github.com/), depués mueve la carpeta a su ubicación definitiva y desde la terminal entra al directorio y corre el comando `bundle exec jekyll serve`
 
 Antes de subir tu sitio, realiza los cambios necesarios en `_config.yml`
 
@@ -47,7 +63,7 @@ Antes de subir tu sitio, realiza los cambios necesarios en `_config.yml`
 
   El `App Id` y el `Api version`, deben ser reemplazados en `_config.yml`.
 
-  Después, en `https://developers.facebook.com/docs/plugins/comments` debes agregar en `Comments Plugin Code Generator` el url que utilizarán para tu sitio, por último debes dar click en el botón `Get code`. Sólo necesitas generar el código desde la página para que la información que ya agregaste en `_config.yml` funcione. 
+  Después, en `https://developers.facebook.com/docs/plugins/comments` debes agregar en `Comments Plugin Code Generator` el url que utilizarán para tu sitio, por último debes dar click en el botón `Get code`. Sólo necesitas generar el código desde la página para que la información que ya agregaste en `_config.yml` funcione.
 
 ## Licencia
 MIT. Copyright (c) [Nombre del proveedor ](http://sitiodelproveedor.com)
