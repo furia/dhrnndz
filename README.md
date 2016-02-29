@@ -37,9 +37,17 @@ Antes de subir tu sitio, realiza los cambios necesarios en `_config.yml`
 
 - Para cambiar la imagen de fondo que aparece en la página de inicio deberás reemplazar `img/background.jpg`por la que tu desees, las dimensiones de esta son: 1100 x 733 px
 
-- Para generar comentarios en los publicaciones, deberás utilizar Facebook comments.
+- Para tener comentarios en los publicaciones, deberás utilizar Facebook comments.
 
-  Crear una nueva aplicación en `My Apps` para obtener tu número de identificación
+  En caso de no querer utilizarlos se tiene que localizar en `_config.yml` el bloque `# Facebook comments` y cambiar a false la varaible `fbcomments`.
+
+  Para utilizarlos, es necesario tener validada la cuenta en Facebook (número telefónico) y estar registrado como desarrollador en `https://developers.facebook.com/`.
+
+  Una vez que se tenga lo anterior, se tiene que crear una nueva aplicación en `My Apps`, selecionando como plataforma `Sitio web` para obtener tu número de identificación o `App Id`.
+
+  El `App Id` y el `Api version`, deben ser reemplazados en `_config.yml`.
+
+  Después, en `https://developers.facebook.com/docs/plugins/comments` debes agregar en `Comments Plugin Code Generator` el url que utilizarán para tu sitio, por último debes dar click en el botón `Get code`. Sólo necesitas generar el código desde la página para que la información que ya agregaste en `_config.yml` funcione. 
 
 ## Licencia
 MIT. Copyright (c) [Nombre del proveedor ](http://sitiodelproveedor.com)

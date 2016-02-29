@@ -19,7 +19,7 @@ id: Post
       </article>
       <article class="extra-margin-sides">
       {% include facebook-init.html %}
-      {% if page.fbcomments %}
+      {% if site.fbcomments %}
         <h3>Comentarios</h3>
         <div class="fb-comments" data-href="{{ site.url }}{{ page.url }}" data-width="500px" data-numposts="10"></div>
       {% endif %}
