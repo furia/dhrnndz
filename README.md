@@ -6,30 +6,31 @@ La información está distribuida en bloques por lo que cada uno de ellos tiene 
 
 Este tema está pensado para usar dos escenarios: uno antes/durante y uno posterior o al cierre del evento.
 
-El antes/durante, inicia desde que ya se ha decidido y logrado concretar los aspectos operativos de un hackatón. Aquí la información debe ser clara, puntual y se tiene que adelantar a responder a las preguntas más comunes que puedan tener los interesados.
+El antes/durante, inicia desde que ya se han decidido y logrado concretar los aspectos operativos de un hackatón. Aquí la información debe ser clara, puntual y se tiene que adelantar a responder a las preguntas más comunes que puedan tener los interesados.
 
 El escenario posterior, comienza a ser útil una vez que el hackatón a llegado a su término, es ideal hacer saber de manera pública cuáles fueron los logros que se obtuvieron, así como quienes fueron los ganadores.
 
 Hacer el cambio de escenario implica modificar algunos datos.
 
-Cabe mencionar que la apariencia del contenido es responsivo y editable. Funciona utilizando plataformas como http://jekyllrb.com/ y servicios como https://github.com/, entre otros.
+Cabe mencionar que la apariencia del contenido es responsivo y editable. Funciona utilizando plataformas como http://jekyllrb.com/ y los servicios de https://github.com/, entre otros.
 
 ## Instalación
-Para una instalación fácil, deberás tener presente ciertos requerimientos y comandos, para ello consulta `http://jekyllrb.com/docs/quickstart/`
 
-Debes bajar el tema [desde aquí](https://github.com/), depués tendrás que mover la carpeta a su ubicación definitiva y desde la terminal entra al directorio y corre el comando `bundle exec jekyll serve`
+Para tener una copia del tema en tu cuenta de GitHub, debes localizar el botón de `fork` en la esquina superior derecha y darle click.
 
-Antes de subir tu sitio, realiza los cambios necesarios en `_config.yml`
+Si tienes más experiencia, puedes hacer una copia local y gestionarlo desde uno de tus repositorios. Si necesitas información al respecto consulta la documentación en `https://github.com/`y `http://jekyllrb.com/docs/quickstart/`.
 
-1. Si estás almacenando tu sitio en GitHub tu `url` debería ser `http://nombre-de-usuario.github.io` si necesitas información al respecto consulta `https://pages.github.com/`
+En caso de usar `https://pages.github.com/` para publicar tu sitio, deberás hacer ciertos cambios.
 
-2. En `baseurl` se encuentra la sub-ruta para tu sitio. Si el repositorio se llama `hackatones`, este debería estar en `/hackatones`
+1. Cambiar el nombre del repositorio por el nombre que usas como usuario (es ideal que el nombre haga referencia al nombre del hackatón).
 
-3. En `tracking_id` puedes establecer tu identificador para google analytics. Para que funciones esta variable debe estár definida como `true`
+2. En el archivo `_config.yml`, deberás modificar `baseurl` por el mismo nombre.
+
+Para más información al respecto consulta `https://pages.github.com/`
 
 ## Uso
 
-- Para hacer funcionar el servidor debes utilizar la línea `jekyll server --baseurl`
+- En caso de usar el tema desde local, se debe utilizar la línea `jekyll server --baseurl`para correr el servidor.
 
 - La información para la página de inicio se puede modificar en `_data` y en `_config.yml`
 
@@ -71,6 +72,8 @@ Antes de subir tu sitio, realiza los cambios necesarios en `_config.yml`
 - Este tema esta pensado para manejar una gama cromática específica, si deseas modificar los colores debes ir a `_sass/_site.scss` y ubicar el bloque `// Variables de color para el tema`
 
 - Como se mencionó este tema está pensado para manejar 2 escenarios, uno previo/durante y otro posterior al evento. En `_config.yml`, encontrarás las `// Variables de contenido`, los valores definidos son para el escenario previo. Para el posterior, deberás invertir el valor de éstas variables.
+
+- También se puede usar [Google Analytics](https://www.google.com.mx/analytics/) para hacer seguimiento de quién visita el sitio, para ello deberás cambiar en `_config.yml` el `tracking_id` por tu número de idenfiticación del servicio. Para que funciones esta variable debe estár definida como `true`.
 
 
 ## Licencia
