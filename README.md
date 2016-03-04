@@ -12,21 +12,21 @@ El escenario posterior, comienza a ser útil una vez que el hackatón a llegado 
 
 Hacer el cambio de escenario implica modificar algunos datos.
 
-Cabe mencionar que la apariencia del contenido es responsivo y editable. Funciona utilizando plataformas como http://jekyllrb.com/ y los servicios de https://github.com/, entre otros.
+Cabe mencionar que la apariencia del contenido es responsivo y editable. Funciona utilizando plataformas como [http://jekyllrb.com/](http://jekyllrb.com/) y los servicios de [https://github.com/](https://github.com/), entre otros.
 
 ## Instalación
 
 Para tener una copia del tema en tu cuenta de GitHub, debes localizar el botón de `fork` en la esquina superior derecha y darle click.
 
-Si tienes más experiencia, puedes hacer una copia local y gestionarlo desde uno de tus repositorios. Si necesitas información al respecto consulta la documentación en `https://github.com/`y `http://jekyllrb.com/docs/quickstart/`.
+Si tienes más experiencia, puedes hacer una copia local y gestionarlo desde uno de tus repositorios. Si necesitas información al respecto consulta la documentación en [https://github.com/](https://github.com/) y [http://jekyllrb.com/docs/quickstart/](http://jekyllrb.com/docs/quickstart/).
 
-En caso de usar `https://pages.github.com/` para publicar tu sitio, deberás hacer ciertos cambios.
+En caso de usar [https://pages.github.com/](https://pages.github.com/) para publicar tu sitio, deberás hacer ciertos cambios.
 
 1. Cambiar el nombre del repositorio por el nombre que usas como usuario (es ideal que el nombre haga referencia al nombre del hackatón).
 
 2. En el archivo `_config.yml`, deberás modificar `baseurl` por el mismo nombre.
 
-Para más información al respecto consulta `https://pages.github.com/`
+Para más información al respecto consulta [https://pages.github.com/](https://pages.github.com/).
 
 ## Uso
 
@@ -61,13 +61,13 @@ Para más información al respecto consulta `https://pages.github.com/`
 
   En caso de no querer utilizarlos se tiene que localizar en `_config.yml` el bloque `# Facebook comments` y cambiar a false la variable `fbcomments`.
 
-  Para utilizarlos, es necesario tener validada la cuenta en Facebook (número telefónico) y estar registrado como desarrollador en `https://developers.facebook.com/`.
+  Para utilizarlos, es necesario tener validada la cuenta en Facebook (número telefónico) y estar registrado como desarrollador en [https://developers.facebook.com/](https://developers.facebook.com/).
 
   Una vez que se tenga lo anterior, se tiene que crear una nueva aplicación en `My Apps`, selecionando como plataforma `Sitio web` para obtener tu número de identificación o `App Id`.
 
   El `App Id` y el `Api version`, deben ser reemplazados en `_config.yml`.
 
-  Después, en `https://developers.facebook.com/docs/plugins/comments` debes agregar en `Comments Plugin Code Generator` el url que utilizarás para tu sitio, por último debes dar click en el botón `Get code`. Sólo necesitas generar el código desde la página para que la información que ya agregaste en `_config.yml` funcione.
+  Después, en [https://developers.facebook.com/docs/plugins/comments](https://developers.facebook.com/docs/plugins/comments) debes agregar en `Comments Plugin Code Generator` el url que utilizarás para tu sitio, por último debes dar click en el botón `Get code`. Sólo necesitas generar el código desde la página para que la información que ya agregaste en `_config.yml` funcione.
 
 - Este tema esta pensado para manejar una gama cromática específica, si deseas modificar los colores debes ir a `_sass/_site.scss` y ubicar el bloque `// Variables de color para el tema`
 
