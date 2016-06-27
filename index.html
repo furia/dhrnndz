@@ -23,10 +23,8 @@ id: Home
 <section id="titleWithArrow" class="container animated fadeIn wow">
   <div class="row white-block">
     <div class="col-lg-10 col-lg-offset-1">
-      {% for goal in site.data.goal %}
-      <h2 class="animated fadeIn wow">{{ goal.name }}</h2>
-      <p class="extra-margin-sides">{{ goal.description}}</p>
-      {% endfor %}
+      <h2 class="animated fadeIn wow">{{ site.data.objetivo.titulo }}</h2>
+      <p class="extra-margin-sides">{{ site.data.objetivo.descripcion }}</p>
     </div>
   </div>
 </section>
@@ -37,24 +35,21 @@ id: Home
   <div class="container" data-wow-delay="1s">
     <div class="row secondary-color-block">
       <div class="col-lg-10 col-lg-offset-1">
-        {% for agenda_hash in site.data.agenda %}
-        {% assign agenda = agenda_hash[1] %}
-        <h2>{{ agenda.name }}</h2>
+        <h2>{{ site.data.agenda.titulo }}</h2>
         <ul class="row">
-          {% for a in agenda.agenda %}
+          {% for evento in site.data.agenda.evento %}
           <li class="col-md-6 col-sm-6 extra-margin">
             <div class="row">
               <div class="col-md-4 col-sm-4">
-                <h3>{{ a.name }}</h3>
+                <h3>{{ evento.nombre }}</h3>
               </div>
               <div class="col-md-8 col-md-8">
-                <p>{{ a.description }}</p>
+                <p>{{ evento.descripcion }}</p>
               </div>
             </div>
           </li>
           {% endfor %}
         </ul>
-        {% endfor %}
       </div>
     </div>
   </div>
@@ -67,10 +62,8 @@ id: Home
   <div class="container">
     <div class="row main-color-block">
       <div class="col-lg-10 col-lg-offset-1">
-        {% for map in site.data.map %}
-        <h2>{{ map.name }}</h2>
-        {{ map.description}}
-        {% endfor %}
+        <h2>{{ site.data.mapa.titulo }}</h2>
+        {{ site.data.mapa.codigo-mapa }}
       </div>
     </div>
   </div>
@@ -81,25 +74,22 @@ id: Home
 <section class="container animated fadeIn wow">
   <div class="row white-block-bis">
     <div class="col-lg-10 col-lg-offset-1">
-      {% for judge_hash in site.data.judges %}
-      {% assign judge = judge_hash[1] %}
-      <h2>{{ judge.name }}</h2>
+      <h2>{{ site.data.jueces.titulo }}</h2>
       <ul class="row">
-        {% for j in judge.judges %}
+        {% for juez in site.data.jueces.juez %}
         <li class="col-md-6 col-sm-6 extra-margin">
           <div class="row">
             <div class="col-md-4 col-sm-4 col-xs-4">
-              <img class="img-circle" src="{{ j.image }}" />
+              <img class="img-circle" src="{{ juez.imagen }}" />
             </div>
             <div class="col-md-8 col-sm-8 col-xs-8">
-              <h4>{{ j.name }}</h4>
-              <p>{{ j.description }}</p>
+              <h4>{{ juez.nombre }}</h4>
+              <p>{{ juez.descripcion }}</p>
             </div>
           </div>
         </li>
         {% endfor %}
       </ul>
-      {% endfor %}
     </div>
   </div>
 </section>
@@ -110,22 +100,19 @@ id: Home
   <div class="container">
     <div class="row main-color-block">
       <div class="col-lg-10 col-lg-offset-1">
-        {% for award_hash in site.data.awards %}
-        {% assign award = award_hash[1] %}
-        <h2 class="border-title">{{ award.name }}</h2>
+        <h2 class="border-title">{{ site.data.premios.titulo }}</h2>
         <ul class="row">
-          {% for a in award.awards %}
+          {% for premio in site.data.premios.premio %}
           <li>
             <div class="col-md-2 col-sm-4">
-              <h3>{{ a.name }}</h3>
+              <h3>{{ premio.nombre }}</h3>
             </div>
             <div class="col-md-10 col-sm-8 extra-margin">
-              <p>{{ a.description }}</p>
+              <p>{{ premio.descripcion }}</p>
             </div>
           </li>
           {% endfor %}
         </ul>
-        {% endfor %}
       </div>
     </div>
   </div>
@@ -137,9 +124,9 @@ id: Home
   <div class="container">
     <div class="row secondary-color-block">
       <div class="col-lg-10 col-lg-offset-1 extra-margin-text">
-        {% for results in site.data.results %}
-        <h2>{{ results.name }}</h2>
-        {{ results.description}}
+        {% for resultados in site.data.resultados %}
+        <h2>{{ resultados.titulo }}</h2>
+        {{ resultados.descripcion}}
         {% endfor %}
       </div>
     </div>
@@ -151,27 +138,24 @@ id: Home
 <section class="main-color-background animated fadeIn wow">
   <div class="container-fluid">
     <div class="row main-color-block">
-      {% for winner_hash in site.data.winners %}
-      {% assign winner = winner_hash[1] %}
       <div class="col-lg-10 col-lg-offset-1">
-        <h2>{{ winner.name }}</h2>
+        <h2>{{ site.data.ganadores.titulo }}</h2>
       </div>
-      <ul class="no-margin">
-        {% for w in winner.winners %}
-        <li>
-          <div class="col-md-4 col-sm-4 award">
-            <figure>
-              <img src="{{ w.image }}" alt="Award">
-              <figcaption>
-                <h4>{{ w.name }}</h4>
-                <p>{{ w.description }}</p>
-              </figcaption>
-            </figure>
-          </div>
-        </li>
-        {% endfor %}
-      </ul>
-      {% endfor %}
+        <ul class="no-margin">
+          {% for ganador in site.data.ganadores.ganador %}
+          <li>
+            <div class="col-md-4 col-sm-4 award">
+              <figure>
+                <img src="{{ ganador.imagen }}" alt="Ganador">
+                <figcaption>
+                  <h4>{{ ganador.nombre }}</h4>
+                  <p>{{ ganador.descripcion }}</p>
+                </figcaption>
+              </figure>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
       </div>
     </div>
   </div>

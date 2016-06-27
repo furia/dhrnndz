@@ -4,26 +4,21 @@
       <div class="col-md-10 col-md-offset-1">
         <div class="row">
           <div class="col-md-4">
-            {% for contact in site.data.footer-contact %}
             <ul class="footer-list">
-              <li><a href="{{ footer.contact-link }}">{{ contact.contact-title }}</a></li>
+              <li><a href="{{ site.data.contacto.formulario }}">{{ site.data.contacto.titulo }}</a></li>
               <!-- Para el contacto te recomendamos vincular un cuestionario de google forms -->
-              <li>{{ contact.organizer-name }}</li>
-              <p>{{ contact.organizer-text }} <a href="{{ contact.organizer-link }}">{{ contact.organizer-text-title }}</a></p>
+              <li>{{ site.data.contacto.nombre-del-organizador }}</li>
+              <p>{{ site.data.contacto.texto-del-organizador }} <a href="{{ site.data.contacto.link-del-organizador }}">{{ site.data.contacto.titulo-del-link-del-organizador }}</a></p>
             </ul>
-            {% endfor %}
           </div>
           <div class="col-md-4">
           </div>
           <div class="col-md-4">
-            {% for social_hash in site.data.social %}
-            {% assign social = social_hash[1] %}
             <ul class="footer-icons">
-              {% for s in social.social %}
-              <li><a href="{{ s.address }}"><img src="{{ site.baseurl }}{{ s.image }}" /></a></li>
+              {% for red-social in site.data.redes-sociales.red-social %}
+              <li><a href="{{ red-social.direccion }}"><img src="{{ site.github.url }}{{ red-social.imagen }}" /></a></li>
               {% endfor %}
             </ul>
-            {% endfor %}
           </div>
         </div>
       </div>

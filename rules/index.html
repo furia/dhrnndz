@@ -8,18 +8,16 @@ id: Rules
 <div class="container">
   <div class="row white-block extra-margin-header">
     <div class="col-lg-10 col-lg-offset-1">
-      {% for rule_hash in site.data.rules %}
-      {% assign rule = rule_hash[1] %}
-      <h2>{{ rule.name }}</h2>
+
+      <h2>{{ site.data.reglas.titulo }}</h2>
       <ol class="row">
-        {% for r in rule.rules %}
+        {% for regla in site.data.reglas.regla %}
         <li class="col-lg-12 extra-margin animated fadeIn wow">
-          <h3>{{ r.title }}</h3>
-          <p>{{ r.text }}</p>
+          <h3>{{ regla.titulo }}</h3>
+          <p>{{ regla.texto }}</p>
         </li>
         {% endfor %}
       </ol>
-      {% endfor %}
     </div>
   </div>
 </div>

@@ -2,7 +2,7 @@
 layout: post
 title:  "Segunda publicación"
 date:   2016-01-22 16:00:00 -0600
-categories: jekyll update
+categories: post
 ---
 
 Para más información relacionada a publicaciónes consultar: [Writing posts][jekyll-post].

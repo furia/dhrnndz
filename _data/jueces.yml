@@ -1,25 +1,25 @@
-name: Jueces
-judges:
-  - name: 1er juez
-    description: |
+titulo: Jueces
+juez:
+  - nombre: 1er juez
+    descripcion: |
       Lorem ipsum d olor sit amet, consectetur adipiscing elit.
       Lorem ipsum dolor sit amet, consectetur adi piscing elit.
-    image: img/judges/juez.png
+    imagen: img/judges/juez.png
 
-  - name: 2do juez
-    description: |
+  - nombre: 2do juez
+    descripcion: |
       Lorem ipsum d olor sit amet, consectetur adipiscing elit.
       Lorem ipsum dolor sit amet, consectetur adi piscing elit.
-    image: img/judges/juez.png
+    imagen: img/judges/juez.png
 
-  - name: 3er juez
-    description: |
+  - nombre: 3er juez
+    descripcion: |
       Lorem ipsum d olor sit amet, consectetur adipiscing elit.
       Lorem ipsum dolor sit amet, consectetur adi piscing elit.
-    image: img/judges/juez.png
+    imagen: img/judges/juez.png
 
-  - name: 4to juez
-    description: |
+  - nombre: 4to juez
+    descripcion: |
       Lorem ipsum d olor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adi piscing elit.
       Lorem ipsum d olor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adi piscing elit.
-    image: img/judges/juez.png
+    imagen: img/judges/juez.png

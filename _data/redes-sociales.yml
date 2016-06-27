@@ -1,0 +1,17 @@
+titulo: Redes Sociales
+red-social:
+  - nombre: Twitter
+    direccion: https://twitter.com
+    imagen: /img/icon-twitter.svg
+
+  - nombre: Facebook
+    direccion: https://www.facebook.com
+    imagen: /img/icon-facebook.svg
+
+  - nombre: Instagram
+    direccion: https://www.instagram.com
+    imagen: /img/icon-instagram.svg
+
+  - nombre: Linkedin
+    direccion: https://www.linkedin.com
+    imagen: /img/icon-linkedin.svg

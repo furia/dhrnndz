@@ -34,11 +34,12 @@ Para más información al respecto consulta [https://pages.github.com/](https://
 
 - La información para la página de inicio se puede modificar en `_data` y en `_config.yml`
 
-  Para cambiar el texto al inicio del proyecto: `Título para el hackatón`, deberás cambiar `title:` en `_config.yml`
+  Para cambiar el texto al inicio del proyecto: `Título para el hackatón`, deberás cambiar `title:` en `_config.yml`.
 
-  Para cambiar la imagen de fondo que aparece en la página de inicio deberás reemplazar `img/background.jpg`por la que tu desees, las dimensiones de esta son: 1100 x 733 px
+  Para cambiar la imagen de fondo que aparece en la página de inicio deberás reemplazar `img/background.jpg`por la que tu desees, las dimensiones de esta son: 1100 x 733 px.
 
-  En el caso de la sección Objetivo debes ir a `_data/goal.yml`
+  En el caso de la sección Objetivo debes ir a `_data/goal.yml`.
+
   Si deseas agregar fechas para la Agenda sólo debes seguir el formato en `_data/agenda/agenda.yml`
 
   Para el mapa, sólo necesitas cambiar el iframe que te proporciona google maps en `_data/map.yml` o incluir la estructura similar de otro servicio
@@ -57,17 +58,7 @@ Para más información al respecto consulta [https://pages.github.com/](https://
 
   Las imágenes de los post deben estár en el directorio `/post-images` y el vínculo en el archivo almacenado en `_posts/` debe coincidir
 
-- Para tener comentarios en los publicaciones, deberás utilizar Facebook comments.
-
-  En caso de no querer utilizarlos se tiene que localizar en `_config.yml` el bloque `# Facebook comments` y cambiar a false la variable `fbcomments`.
-
-  Para utilizarlos, es necesario tener validada la cuenta en Facebook (número telefónico) y estar registrado como desarrollador en [https://developers.facebook.com/](https://developers.facebook.com/).
-
-  Una vez que se tenga lo anterior, se tiene que crear una nueva aplicación en `My Apps`, selecionando como plataforma `Sitio web` para obtener tu número de identificación o `App Id`.
-
-  El `App Id` y el `Api version`, deben ser reemplazados en `_config.yml`.
-
-  Después, en [https://developers.facebook.com/docs/plugins/comments](https://developers.facebook.com/docs/plugins/comments) debes agregar en `Comments Plugin Code Generator` el url que utilizarás para tu sitio, por último debes dar click en el botón `Get code`. Sólo necesitas generar el código desde la página para que la información que ya agregaste en `_config.yml` funcione.
+- 
 
 - Este tema esta pensado para manejar una gama cromática específica, si deseas modificar los colores debes ir a `_sass/_site.scss` y ubicar el bloque `// Variables de color para el tema`
 

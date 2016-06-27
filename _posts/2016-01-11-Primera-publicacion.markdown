@@ -2,7 +2,7 @@
 layout: post
 title:  "Primera publicación"
 date:   2016-01-11 16:00:00 -0600
-categories: jekyll update
+categories: post
 ---
 
 Para más información relacionada a publicaciónes consultar: [Writing posts][jekyll-post].
@@ -15,8 +15,8 @@ Duis venenatis nisl rutrum ante aliquam auctor. Quisque laoreet, enim vel volutp
 
 Sed eget sapien accumsan dolor luctus pulvinar. Nulla facilisi. Donec arcu lacus, bibendum sed aliquet id, tempus sit amet augue. Duis in elementum felis.
 
-![Imagen]({{ site.baseurl }}/post-images/2016-01-11-image.png)
+![Imagen]({{ site.github.url }}/post-images/2016-01-11-image.png)
 
-![Imagen-2]({{ site.baseurl }}/post-images/2016-01-11-image-2.png)
+![Imagen-2]({{ site.github.url }}/post-images/2016-01-11-image-2.png)
 
 [jekyll-post]: http://jekyllrb.com/docs/posts/

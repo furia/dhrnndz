@@ -1,0 +1,13 @@
+titulo: Agenda
+evento:
+  - nombre: 1er día
+    descripcion: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adi piscing elit.
+
+  - nombre: 2do día
+    descripcion: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adi piscing elit.
+
+  - nombre: 3er día
+    descripcion: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adi piscing elit.
+
+  - nombre: 4to día
+    descripcion: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adi piscing elit. Lorem ipsum dolor sit amet, consectetur adi piscing elit.
