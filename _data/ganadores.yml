@@ -3,14 +3,14 @@ ganador:
   - nombre: Nombre del ganador
     descripcion: |
       Pellentesq ue sit amet arcu quis neque faucibus luctus et nec eros.
-    imagen: img/winners/winner_1.jpg
+    imagen: img/ganadores/winner_1.jpg
 
   - nombre: Nombre del ganador
     descripcion: |
       Pellentesq ue sit amet arcu quis neque faucibus luctus et nec eros.
-    imagen: img/winners/winner_2.jpg
+    imagen: img/ganadores/winner_2.jpg
 
   - nombre: Nombre del ganador
     descripcion: |
       Pellentesq ue sit amet arcu quis neque faucibus luctus et nec eros.
-    imagen: img/winners/winner_3.jpg
+    imagen: img/ganadores/winner_3.jpg
