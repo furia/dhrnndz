@@ -17,8 +17,8 @@ reglas: true
 agenda: true
 mapa: true
 premios: true
-resultados: true
-ganadores: true
+resultados: false
+ganadores: false
 
 # Google analytics
 google_analytics: true
