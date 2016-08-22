@@ -16,7 +16,7 @@
           <div class="col-md-4">
             <ul class="footer-icons">
               {% for red-social in site.data.redes-sociales.red-social %}
-              <li><a href="{{ red-social.direccion }}"><img src="{{ site.github.url }}{{ red-social.imagen }}" /></a></li>
+              <li><a href="{{ red-social.direccion }}"><img src="{{ site.github.url }}{{ red-social.imagen }}" alt="{{ red-social.nombre }}" /></a></li>
               {% endfor %}
             </ul>
           </div>
