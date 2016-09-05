@@ -48,6 +48,10 @@
 
     img {
       width: 1.875em;
+      background-color: $main-color;
+    }
+    img:hover {
+      background-color: darken($main-color, 10%);
     }
   }
 }

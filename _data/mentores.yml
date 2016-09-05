@@ -1,0 +1,25 @@
+titulo: Mentores
+mentor:
+  - nombre: 1er mentor
+    descripcion: |
+      Lorem ipsum d olor sit amet, consectetur adipiscing elit.
+      Lorem ipsum dolor sit amet, consectetur adi piscing elit.
+    imagen: img/mentores/mentor.jpg
+
+  - nombre: 2do mentor
+    descripcion: |
+      Lorem ipsum d olor sit amet, consectetur adipiscing elit.
+      Lorem ipsum dolor sit amet, consectetur adi piscing elit.
+    imagen: img/mentores/mentor.jpg
+
+  - nombre: 3er mentor
+    descripcion: |
+      Lorem ipsum d olor sit amet, consectetur adipiscing elit.
+      Lorem ipsum dolor sit amet, consectetur adi piscing elit.
+    imagen: img/mentores/mentor.jpg
+
+  - nombre: 4to mentor
+    descripcion: |
+      Lorem ipsum d olor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adi piscing elit.
+      Lorem ipsum d olor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adi piscing elit.
+    imagen: img/mentores/mentor.jpg

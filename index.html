@@ -70,7 +70,7 @@ id: Home
 </section>
 {% endif %}
 
-<!-- Jueces -->
+<!-- Jueces y mentores-->
 <section class="container animated fadeIn wow">
   <div class="row white-block-bis">
     <div class="col-lg-10 col-lg-offset-1">
@@ -85,6 +85,24 @@ id: Home
             <div class="col-md-8 col-sm-8 col-xs-8">
               <h4>{{ juez.nombre }}</h4>
               <p>{{ juez.descripcion }}</p>
+            </div>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="col-lg-10 col-lg-offset-1">
+      <h2>{{ site.data.mentores.titulo }}</h2>
+      <ul class="row">
+        {% for mentor in site.data.mentores.mentor %}
+        <li class="col-md-6 col-sm-6 extra-margin">
+          <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-4">
+              <img class="img-circle" src="{{ mentor.imagen }}" />
+            </div>
+            <div class="col-md-8 col-sm-8 col-xs-8">
+              <h4>{{ mentor.nombre }}</h4>
+              <p>{{ mentor.descripcion }}</p>
             </div>
           </div>
         </li>
@@ -119,7 +137,7 @@ id: Home
 </section>
 {% endif %}
 
-{% if.site.resultados %}
+{% if site.resultados %}
 <section class="secondary-color-background animated fadeIn wow">
   <div class="container">
     <div class="row secondary-color-block">
