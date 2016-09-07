@@ -12,13 +12,13 @@ url: "https://dhrnndz.github.io/dhrnndz/"
 # Hay dos escenarios uno previo a la fecha de inicio y otro posterior al término del evento
 # En el previo las variables quedan como están
 # Para el posterior se debe invertir el valor de las variables
-preguntas: true
-reglas: true
-agenda: true
-mapa: true
-premios: true
-resultados: false
-ganadores: false
+preguntas: false
+reglas: false
+agenda: false
+mapa: false
+premios: false
+resultados: true
+ganadores: true
 
 # Google analytics
 google_analytics: false
